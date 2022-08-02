@@ -2,8 +2,8 @@
 ---
 # Result
 bool state
-float64 weight
+float64 weight  # Unit gram
 ---
 # Feedback
 bool state
-float64 weight
+float64 weight  # Unit gram
