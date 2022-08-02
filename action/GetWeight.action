@@ -1,9 +1,9 @@
 # Goal
 ---
 # Result
-bool state
+bool stable     # State of the scale (for example measurement is stable or fluctuating)
 float64 weight  # Unit gram
 ---
 # Feedback
-bool state
+bool stable     # State of the scale (for example measurement is stable or fluctuating)
 float64 weight  # Unit gram
