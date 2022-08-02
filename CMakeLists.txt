@@ -1,20 +1,49 @@
 cmake_minimum_required(VERSION 3.8)
 project(weight_scale_interfaces)
 
+# Default to C99
+if(NOT CMAKE_C_STANDARD)
+  set(CMAKE_C_STANDARD 99)
+endif()
+
+# Default to C++14
+if(NOT CMAKE_CXX_STANDARD)
+  set(CMAKE_CXX_STANDARD 14)
+endif()
+
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
+endif()
+
+# if CMAKE_BUILD_TYPE is not specified, set "Release" as default
+if(NOT CMAKE_BUILD_TYPE)
+    set(CMAKE_BUILD_TYPE Release)
 endif()
 
 find_package(ament_cmake REQUIRED)
 find_package(builtin_interfaces REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
-rosidl_generate_interfaces(${PROJECT_NAME}
-  "msg/Weight.msg"
-  "srv/SetZero.srv"
-  "srv/GetWeight.srv"
-  "action/SetZero.action"
+set(action_files
   "action/GetWeight.action"
+  "action/SetMaxSpan.action"
+  "action/SetMinSpan.action"
+  "action/SetZero.action"
+)
+
+set(msg_files
+  "msg/Weight.msg"
+)
+
+set(srv_files
+  "srv/GetWeight.srv"
+  "srv/SetZero.srv"
+)
+
+rosidl_generate_interfaces(${PROJECT_NAME}
+  ${action_files}
+  ${msg_files}
+  ${srv_files}
   DEPENDENCIES builtin_interfaces
 )
 
