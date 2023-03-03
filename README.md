@@ -13,27 +13,27 @@ colcon build --cmake-clean-first --symlink-install --packages-select weight_scal
 | bool | stable | State of the scale (for example measurement is stable or fluctuating) |
 | bool | overload | Couldn't measure due to overweight |
 | float64 | weight | weight |
-| string | unit | kg, g, oz, ... |
+| string | unit | unit of measurement result (kg, g, oz, ...) |
 
 ## action.SetZero
 | type | name | explanation |
 |:---|:---|:---|
-| Goal | --- | --- |
+| ---  || Goal |
 | float64 | timeout | timeout(sec) |
-| Result | --- | --- |
+| --- || Result |
 | bool | success | True/False |
-| string | message | |
-| Feedback | --- | --- |
+| string | message | result message |
+| --- || Feedback |
 | weight_scale_interfaces/Weight | weight | |
 
 ## action.GetWeight
 | type | name | explanation |
 |:---|:---|:---|
-| Goal | --- | --- |
+| ---  || Goal |
 | float64 | timeout | timeout(sec) |
-| Result | --- | --- |
+| --- || Result |
 | weight_scale_interfaces/Weight | weight |
 | bool | success | succeeded in obtaining a stable weight |
-| string | message ||
-| Feedback | --- | --- |
+| string | message | result message |
+| --- || Feedback |
 | weight_scale_interfaces/Weight | weight ||
