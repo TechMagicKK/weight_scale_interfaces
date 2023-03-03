@@ -6,7 +6,7 @@ cd ~/dev_ws
 colcon build --cmake-clean-first --symlink-install --packages-select weight_scale_interfaces
 . install/local_setup.zsh
 ```
-## msg.Weight
+## weight_scale_interfaces/msg/Weight
 | type | name | explanation |
 |:---|:---|:---|
 | builtin_interfaces/Time | stamp | Measurement time |
@@ -15,7 +15,7 @@ colcon build --cmake-clean-first --symlink-install --packages-select weight_scal
 | float64 | weight | weight |
 | string | unit | unit of measurement result (kg, g, oz, ...) |
 
-## action.SetZero
+## weight_scale_interfaces/action/SetZero
 | type | name | explanation |
 |:---|:---|:---|
 ||| Goal |
@@ -26,7 +26,7 @@ colcon build --cmake-clean-first --symlink-install --packages-select weight_scal
 | --- || Feedback |
 | weight_scale_interfaces/Weight | weight | |
 
-## action.GetWeight
+## weight_scale_interfaces/action/GetWeight
 | type | name | explanation |
 |:---|:---|:---|
 ||| Goal |
