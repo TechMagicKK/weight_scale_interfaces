@@ -13,3 +13,14 @@ colcon build --cmake-clean-first --symlink-install --packages-select weight_scal
 | bool | stable | State of the scale (for example measurement is stable or fluctuating) |
 | float64 | weight | weight |
 | string | unit | kg, g, oz, ... |
+
+## action.SetZero
+| type | name | explanation |
+|:---|:---|:---|
+|\2. Goal |
+| float64 | timeout | timeout(sec) |
+|\2. Result |
+| bool | success | True/False |
+| string | message | |
+|\2. Feedback |
+| weight_scale_interfaces/Weight | weight | |
