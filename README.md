@@ -18,7 +18,7 @@ colcon build --cmake-clean-first --symlink-install --packages-select weight_scal
 ## action.SetZero
 | type | name | explanation |
 |:---|:---|:---|
-| ---  || Goal |
+||| Goal |
 | float64 | timeout | timeout(sec) |
 | --- || Result |
 | bool | success | True/False |
@@ -29,7 +29,7 @@ colcon build --cmake-clean-first --symlink-install --packages-select weight_scal
 ## action.GetWeight
 | type | name | explanation |
 |:---|:---|:---|
-| ---  || Goal |
+||| Goal |
 | float64 | timeout | timeout(sec) |
 | --- || Result |
 | weight_scale_interfaces/Weight | weight |
