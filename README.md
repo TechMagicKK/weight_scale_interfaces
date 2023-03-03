@@ -24,3 +24,15 @@ colcon build --cmake-clean-first --symlink-install --packages-select weight_scal
 | string | message | |
 | Feedback ||
 | weight_scale_interfaces/Weight | weight | |
+
+## action.GetWeight
+| type | name | explanation |
+|:---|:---|:---|
+| Goal ||
+| float64 | timeout | timeout(sec) |
+| Result ||
+| weight_scale_interfaces/Weight | weight |
+| bool | success | succeeded in obtaining a stable weight |
+| string | message ||
+| Feedback ||
+| weight_scale_interfaces/Weight | weight ||
