@@ -1,9 +1,10 @@
 # Goal
+float64 timeout # sec
 ---
 # Result
-bool stable     # State of the scale (for example measurement is stable or fluctuating)
-float64 weight  # Unit gram
+weight_scale_interfaces/Weight weight
+bool success
+string message
 ---
 # Feedback
-bool stable     # State of the scale (for example measurement is stable or fluctuating)
-float64 weight  # Unit gram
+weight_scale_interfaces/Weight weight

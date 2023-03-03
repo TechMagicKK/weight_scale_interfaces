@@ -26,8 +26,6 @@ find_package(rosidl_default_generators REQUIRED)
 
 set(action_files
   "action/GetWeight.action"
-  "action/SetMaxSpan.action"
-  "action/SetMinSpan.action"
   "action/SetZero.action"
 )
 
@@ -35,15 +33,9 @@ set(msg_files
   "msg/Weight.msg"
 )
 
-set(srv_files
-  "srv/GetWeight.srv"
-  "srv/SetZero.srv"
-)
-
 rosidl_generate_interfaces(${PROJECT_NAME}
   ${action_files}
   ${msg_files}
-  ${srv_files}
   DEPENDENCIES builtin_interfaces
 )
 
