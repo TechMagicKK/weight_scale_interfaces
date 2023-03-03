@@ -11,6 +11,7 @@ colcon build --cmake-clean-first --symlink-install --packages-select weight_scal
 |:---|:---|:---|
 | builtin_interfaces/Time | stamp | Measurement time |
 | bool | stable | State of the scale (for example measurement is stable or fluctuating) |
+| bool | overload | Couldn't measure due to overweight |
 | float64 | weight | weight |
 | string | unit | kg, g, oz, ... |
 
