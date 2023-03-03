@@ -17,10 +17,10 @@ colcon build --cmake-clean-first --symlink-install --packages-select weight_scal
 ## action.SetZero
 | type | name | explanation |
 |:---|:---|:---|
-|\2> Goal |
+| Goal ||
 | float64 | timeout | timeout(sec) |
-|\2> Result |
+| Result ||
 | bool | success | True/False |
 | string | message | |
-|\2> Feedback |
+| Feedback ||
 | weight_scale_interfaces/Weight | weight | |
