@@ -2,7 +2,7 @@
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
   <name>weight_scale_interfaces</name>
-  <version>0.0.2</version>
+  <version>0.0.3</version>
   <description>Definition of the interface for weight scale devices</description>
   <maintainer email="tajima.ryosuke@techmagic.co.jp">Ryosuke Tajima</maintainer>
   <license>Apache License 2.0</license>
