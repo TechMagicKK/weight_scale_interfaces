@@ -2,6 +2,11 @@
 Changelog for package weight_scale_interfaces
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Added action msgs dependence
+* Contributors: Jiaqing Lin
+
 0.0.2 (2023-09-12)
 ------------------
 * Add builtin_interfaces dependency
