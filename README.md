@@ -13,6 +13,7 @@ colcon build --cmake-clean-first --symlink-install --packages-select weight_scal
 | bool | stable | State of the scale (for example measurement is stable or fluctuating) |
 | bool | overload | Couldn't measure due to overweight |
 | float64 | weight | weight |
+| float64 | weight_change_rate | rate of change of weight w.r.t time |
 | string | unit | unit of measurement result (kg, g, oz, ...) |
 
 ## weight_scale_interfaces/action/SetZero
